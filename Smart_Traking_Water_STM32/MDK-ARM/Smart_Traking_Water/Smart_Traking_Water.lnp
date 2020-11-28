@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"smart_traking_water\startup_stm32f103xb.o"
+"smart_traking_water\ds18b20.o"
+"smart_traking_water\main.o"
+"smart_traking_water\stm32f1xx_it.o"
+"smart_traking_water\stm32f1xx_hal_msp.o"
+"smart_traking_water\stm32f1xx_hal_gpio_ex.o"
+"smart_traking_water\stm32f1xx_hal_adc.o"
+"smart_traking_water\stm32f1xx_hal_adc_ex.o"
+"smart_traking_water\stm32f1xx_hal.o"
+"smart_traking_water\stm32f1xx_hal_rcc.o"
+"smart_traking_water\stm32f1xx_hal_rcc_ex.o"
+"smart_traking_water\stm32f1xx_hal_gpio.o"
+"smart_traking_water\stm32f1xx_hal_dma.o"
+"smart_traking_water\stm32f1xx_hal_cortex.o"
+"smart_traking_water\stm32f1xx_hal_pwr.o"
+"smart_traking_water\stm32f1xx_hal_flash.o"
+"smart_traking_water\stm32f1xx_hal_flash_ex.o"
+"smart_traking_water\stm32f1xx_hal_exti.o"
+"smart_traking_water\stm32f1xx_hal_tim.o"
+"smart_traking_water\stm32f1xx_hal_tim_ex.o"
+"smart_traking_water\stm32f1xx_hal_uart.o"
+"smart_traking_water\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Smart_Traking_Water\Smart_Traking_Water.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Smart_Traking_Water.map" -o Smart_Traking_Water\Smart_Traking_Water.axf
